@@ -22,6 +22,7 @@ alias sl='ls'
 alias sudp='sudo'
 alias please='sudo $(fc -ln -1)'
 alias screen="echo no #"
+alias cgrep='grep --color=always -e "^" -e'
 
 # Startup
 clear
