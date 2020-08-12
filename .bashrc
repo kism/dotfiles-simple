@@ -11,10 +11,10 @@ fi
 # User specific aliases and functions
 # Prompt
 if [ -n "$TERM" -a "$TERM" = 'screen' ]; then
-   export PS1="[\[\e[36m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]] \w\n \[\e[35m\]\\$\[\e[m\] "
+   export PS1="[\[\e[36m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]] \w\n\[\e[35m\]\\$\[\e[m\] "
 else
 
-   export PS1="[\[\e[36m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]] \w \[\e[41m\] NOT IN TMUX \[\e[m\]  \n \[\e[35m\]\\$\[\e[m\] "
+   export PS1="[\[\e[36m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]] \w \[\e[41m\] NOT IN TMUX \[\e[m\]  \n\[\e[35m\]\\$\[\e[m\] "
 fi
 
 # Alias
