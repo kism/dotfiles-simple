@@ -28,9 +28,13 @@ alias cgrep='grep --color=always -e "^" -e'
 
 # Startup
 clear
+if test -f /etc/os-release; then
+    . /etc/os-release
+    echo -e "$PRETTY_NAME, \c"
+fi
 uname -s -r
 
-export TMUX_RUNNING="$(pgrep tmux)"
+TMUX_RUNNING="$(pgrep tmux)"
 
 if [ -n "$TERM" -a "$TERM" = 'screen' ]; then
     printf ""
