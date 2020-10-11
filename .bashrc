@@ -30,7 +30,6 @@ alias screen="echo no #"
 alias cgrep='grep --color=always -e "^" -e'
 
 # Startup
-clear
 if test -f /etc/os-release; then
     . /etc/os-release
     echo -e "$PRETTY_NAME, \c"
