@@ -1,5 +1,8 @@
 # .bashrc
 
+PATH=$PATH:$HOME/bin:$HOME/.local/bin
+export PATH
+
 # Fix non interactive everything breaking
 [[ $- != *i* ]] && return
 
