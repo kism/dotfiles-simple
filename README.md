@@ -12,7 +12,10 @@ or
 
 ### Packages
 
+#### Debian
+
     apt-get install wget curl htop vim iotop git tmux
 
+#### Oracle Linux
 
     yum install wget curl htop vim iotop git tmux
