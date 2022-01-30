@@ -12,4 +12,4 @@ or
 
 ### Packages
 
-    apt-get install wget curl htop vim iotop git
+    apt-get install wget curl htop vim iotop git tmux
