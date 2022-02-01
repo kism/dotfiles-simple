@@ -14,9 +14,9 @@ or
 
 #### Debian
 
-    apt-get install wget curl htop vim iotop git tmux
+    apt-get install wget curl htop vim iotop git tmux tar
 
 #### Oracle Linux
 
     yum install epel-release
-    yum install wget curl htop vim iotop git tmux
+    yum install wget curl htop vim iotop git tmux tar
