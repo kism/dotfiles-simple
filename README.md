@@ -18,5 +18,5 @@ or
 
 #### Oracle Linux
 
-    yum install epel-release
-    yum install wget curl htop vim iotop git tmux tar
+    dnf install epel-release
+    dnf install wget curl htop vim iotop git tmux tar
