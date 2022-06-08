@@ -37,7 +37,6 @@ alias nano='vim'
 alias bim='echo -e "\033[0;31m\033[0;41mB\033[0mim"'
 alias screen='echo no #'
 alias cgrep='grep --color=always -e "^" -e'
-alias youtube-dl='yt-dlp -o "%(upload_date)s %(title)s [%(id)s].%(ext)s"'
 
 # Startup
 if test -f /etc/os-release; then
