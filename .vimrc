@@ -27,6 +27,7 @@ set undolevels=1000
 set backspace=indent,eol,start
 set showmatch
 set visualbell
+set nonumber
 
 syntax on
 filetype plugin indent on
