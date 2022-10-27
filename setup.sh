@@ -1,4 +1,4 @@
-# curl --silent https://raw.githubusercontent.com/kism/dotfiles-simple/setup.sh | bash
+# curl --silent https://raw.githubusercontent.com/kism/dotfiles-simple/master/setup.sh | bash
 
 DOTFILESURL="https://github.com/kism/dotfiles-simple/archive/master.tar.gz"
 
