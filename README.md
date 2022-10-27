@@ -1,5 +1,7 @@
 # kism/dotfiles-simple
 
+### Install
+
 Should work on everything
 
     curl --silent https://raw.githubusercontent.com/kism/dotfiles-simple/master/setup.sh | bash
