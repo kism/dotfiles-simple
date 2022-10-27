@@ -1,6 +1,3 @@
-# curl --silent https://raw.githubusercontent.com/kism/dotfiles-simple/master/setup.sh | bash
-
-
 # Navigate to users home folder
 cd ~
 
