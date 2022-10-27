@@ -1,12 +1,11 @@
 # curl --silent https://raw.githubusercontent.com/kism/dotfiles-simple/master/setup.sh | bash
 
-DOTFILESURL="https://github.com/kism/dotfiles-simple/archive/master.tar.gz"
 
-# Move to users home folder
+# Navigate to users home folder
 cd ~
 
 # Download the dotfiles package
-curl --silent -L $DOTFILESURL
+curl --silent -L https://github.com/kism/dotfiles-simple/archive/master.tar.gz | tar xz
 
 # Copy all the dotfiles
 yes | mv dotfiles-simple-master/.* ~ > /dev/null 2> /dev/null
