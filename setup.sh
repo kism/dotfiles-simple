@@ -4,15 +4,7 @@ DOTFILESURL="https://github.com/kism/dotfiles-simple/archive/master.tar.gz"
 
 cd ~
 
-if type curl > /dev/null; then
-    wget -O - $DOTFILESURL | tar xz
-elif type wget > /dev/null; then
-    curl --silent -L https://github.com/kism/dotfiles-simple/archive/master.tar.gz
-elif type git > /dev/null; then
-    git clone https://github.com/kism/dotfiles-simple
-else
-  echo oh no
-fi
+curl --silent -L $DOTFILESURL
 
 yes | mv dotfiles-simple-master/.* ~ > /dev/null 2> /dev/null
 
