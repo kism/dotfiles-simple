@@ -1,4 +1,4 @@
-# Navigate to users home folder
+# Navigate to users home folder, this was once required, now... who knows
 cd ~
 
 # Download the dotfiles package
@@ -16,13 +16,12 @@ yes | cp -r dotfiles-simple-master/.config ~/.config/htop/
 # Remove the downloaded folder
 rm -rf dotfiles-simple-master
 
-# Go back to the folder that the user was in
-cd - > /dev/null
-
 # If this is setting up the root user account, make the tmux bar red
 if [ $EUID -eq 0 ] ; then
     sed -i 's/green/red/g' ~/.tmux.conf
     sed -i 's/colour10/colour9/g' ~/.tmux.conf
 fi
 
+# Go back to the folder that the user was in
+cd - > /dev/null
 . ~/.bashrc
