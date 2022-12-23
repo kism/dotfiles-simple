@@ -5,7 +5,14 @@ cd ~
 curl --silent -L https://github.com/kism/dotfiles-simple/archive/master.tar.gz | tar xz
 
 # Copy all the dotfiles
-yes | mv dotfiles-simple-master/.* ~ > /dev/null 2> /dev/null
+yes | cp -r dotfiles-simple-master/.bash_profile ~
+yes | cp -r dotfiles-simple-master/.bashrc ~
+yes | cp -r dotfiles-simple-master/.inputrc ~
+yes | cp -r dotfiles-simple-master/.tmux.conf ~
+yes | cp -r dotfiles-simple-master/.vimrc ~
+
+mkdir -p .config/htop
+yes | cp -r dotfiles-simple-master/.config .config/htop/
 
 # Remove the downloaded folder
 rm -rf dotfiles-simple-master
