@@ -23,3 +23,7 @@ cat .vimrc >> generated.txt
 echo "EOF" >> generated.txt
 
 echo >> generated.txt
+
+echo "source ~/.bashrc" >> generated.txt
+
+echo >> generated.txt
