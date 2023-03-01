@@ -26,5 +26,3 @@ echo >> generated.txt
 
 echo "source ~/.bashrc" >> generated.txt
 echo "clear" >> generated.txt
-
-echo >> generated.txt
