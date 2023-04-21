@@ -18,6 +18,13 @@ echo "EOF" >> generated.txt
 
 echo >> generated.txt
 
+echo 'cat > ~/.tmux.conf << "EOF"' >> generated.txt
+cat .tmux.conf >> generated.txt
+echo "EOF" >> generated.txt
+
+echo >> generated.txt
+
+
 echo 'cat > ~/.vimrc << "EOF"' >> generated.txt
 cat .vimrc >> generated.txt
 echo "EOF" >> generated.txt
