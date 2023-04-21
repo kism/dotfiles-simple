@@ -16,3 +16,7 @@ Should work on everything
 
     dnf install epel-release
     dnf install wget curl htop vim iotop git tmux tar
+
+
+# TODO
+* check if tmux is installed
