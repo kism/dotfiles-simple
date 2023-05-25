@@ -11,7 +11,7 @@ yes | cp -r dotfiles-simple-master/.inputrc ~
 yes | cp -r dotfiles-simple-master/.tmux.conf ~
 yes | cp -r dotfiles-simple-master/.vimrc ~
 mkdir -p .config/htop
-yes | cp -r dotfiles-simple-master/.config ~/.config/htop/
+yes | cp -r dotfiles-simple-master/htoprc ~/.config/htop/
 
 # Remove the downloaded folder
 rm -rf dotfiles-simple-master
