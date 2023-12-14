@@ -19,17 +19,9 @@ fi
 
 # Preflight checks
 if [ $EUID -eq 0 ] ; then
-    if [ -n "$TERM" -a "$TERM" = 'screen' ]; then
         export PS1="[\[\e[31m\]\u\[\e[m\]@\[\e[31m\]\h\[\e[m\]] \w\n\[\e[33m\]\\$\[\e[m\] "
-    else
-        export PS1="[\[\e[31m\]\u\[\e[m\]@\[\e[31m\]\h\[\e[m\]] \w \[\e[41m\] NOT IN TMUX \[\e[m\]  \n\[\e[33m\]\\$\[\e[m\] "
-    fi
 else
-    if [ -n "$TERM" -a "$TERM" = 'screen' ]; then
         export PS1="[\[\e[36m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]] \w\n\[\e[35m\]\\$\[\e[m\] "
-    else
-        export PS1="[\[\e[36m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]] \w \[\e[41m\] NOT IN TMUX \[\e[m\]  \n\[\e[35m\]\\$\[\e[m\] "
-    fi
 fi
 
 # Alias
