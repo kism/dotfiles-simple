@@ -40,20 +40,4 @@ alias screen='echo no #'
 alias cgrep='grep --color=always -e "^" -e'
 alias whom=who
 
-# Startup
-#if test -f /etc/os-release; then
-#    . /etc/os-release
-#    echo -e "$PRETTY_NAME, \c"
-#fi
-#uname -s -r
-
-#TMUX_RUNNING="$(pgrep tmux)"
-#if [ -n "$TERM" -a "$TERM" = 'screen' ]; then
-#    printf ""
-#else
-#    if [ -z "$TMUX_RUNNING" ]; then
-#        echo "No tmux sessions running"
-#    else
-#        tmux ls 2>/dev/null
-#    fi
-#fi
+export EDITOR=vim
