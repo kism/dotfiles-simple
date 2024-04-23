@@ -1,20 +1,11 @@
-# Navigate to users home folder, this was once required, now... who knows
-cd ~
-
-# Download the dotfiles package
-curl --silent -L https://github.com/kism/dotfiles-simple/archive/master.tar.gz | tar xz
-
 # Copy all the dotfiles
-cp --force ./dotfiles-simple-master/.bash_profile ~
-cp --force ./dotfiles-simple-master/.bashrc ~
-cp --force ./dotfiles-simple-master/.inputrc ~
-cp --force ./dotfiles-simple-master/.tmux.conf ~
-cp --force ./dotfiles-simple-master/.vimrc ~
-mkdir -p .config/htop
-cp --force ./dotfiles-simple-master/htoprc ~/.config/htop/
-
-# Remove the downloaded folder
-rm -rf dotfiles-simple-master
+curl --silent -L https://raw.githubusercontent.com/kism/dotfiles-simple/master/.bash_profile > ~/.bash_profile
+curl --silent -L https://raw.githubusercontent.com/kism/dotfiles-simple/master/.bashrc > ~/.bashrc
+curl --silent -L https://raw.githubusercontent.com/kism/dotfiles-simple/master/.inputrc > ~/.inputrc
+curl --silent -L https://raw.githubusercontent.com/kism/dotfiles-simple/master/.tmux.conf > ~/.tmux.conf
+curl --silent -L https://raw.githubusercontent.com/kism/dotfiles-simple/master/.vimrc > ~/.vimrc
+mkdir -p ~/.config/htop/
+curl --silent https://raw.githubusercontent.com/kism/dotfiles-simple/master/htoprc > ~/.config/htop/htoprc
 
 # If this is setting up the root user account, make the tmux bar red
 if [ $EUID -eq 0 ] ; then
@@ -22,6 +13,4 @@ if [ $EUID -eq 0 ] ; then
     sed -i 's/colour10/colour9/g' ~/.tmux.conf
 fi
 
-# Go back to the folder that the user was in
-cd - > /dev/null
-. ~/.bashrc
+echo "Dotfiles setup, exit this shell and start a new one"
