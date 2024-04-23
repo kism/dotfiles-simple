@@ -1,4 +1,8 @@
 # Download all the dotfiles
+
+# Exit the script if there is an error
+set -e
+
 # Bash
 curl --silent -L https://raw.githubusercontent.com/kism/dotfiles-simple/master/.bash_profile > ~/.bash_profile
 curl --silent -L https://raw.githubusercontent.com/kism/dotfiles-simple/master/.bashrc > ~/.bashrc
@@ -18,4 +22,11 @@ curl --silent -L https://raw.githubusercontent.com/kism/dotfiles-simple/master/.
 mkdir -p ~/.config/htop/
 curl --silent https://raw.githubusercontent.com/kism/dotfiles-simple/master/htoprc/.config/htop/htoprc > ~/.config/htop/htoprc
 
-echo "Dotfiles setup, exit this shell and start a new one"
+# Notification
+if type pgrep > /dev/null; then
+    if pgrep -x curl ; then
+        echo "Dotfiles setup complete!"
+    else
+        echo "Dotfiles setup complete! Load new bash settings with the command: . ~/.bashrc"
+    fi
+fi
