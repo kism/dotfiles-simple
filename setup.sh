@@ -20,4 +20,4 @@ curl --silent -L https://raw.githubusercontent.com/kism/dotfiles-simple/master/.
 
 # Htop
 mkdir -p ~/.config/htop/
-curl --silent https://raw.githubusercontent.com/kism/dotfiles-simple/master/htoprc/.config/htop/htoprc >~/.config/htop/htoprc
+curl --silent https://raw.githubusercontent.com/kism/dotfiles-simple/master/.config/htop/htoprc >~/.config/htop/htoprc
