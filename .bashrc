@@ -1,4 +1,5 @@
 # .bashrc
+# https://github.com/kism/dotfiles-simple/blob/main/.bashrc
 
 PATH=$PATH:$HOME/bin:$HOME/.local/bin
 export PATH
