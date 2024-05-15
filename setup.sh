@@ -1,5 +1,4 @@
 # Download all the dotfiles
-
 # Exit the script if there is an error
 set -e
 

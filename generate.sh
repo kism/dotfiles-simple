@@ -1,3 +1,5 @@
+#! /usr/bin/env bash
+
 echo > generated.txt
 
 echo 'cat > ~/.bashrc << "EOF"' >> generated.txt

@@ -1,3 +1,6 @@
+" .vimrc
+" https://github.com/kism/dotfiles-simple/blob/main/.vimrc
+
 " Wrapping
 set nowrap
 set showbreak=+++
@@ -19,7 +22,7 @@ set softtabstop=4
 " Keymaps
 map q <Nop>
 
-" Misc preferences 
+" Misc preferences
 set mouse-=a                        " Mouse off
 set pastetoggle=<F2>                " Toggle paste mode with F2
 set t_u7=                           " Fix Windows Terminal compatibility
