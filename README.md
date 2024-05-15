@@ -4,7 +4,7 @@
 
 Should work on everything
 
-    curl --silent https://raw.githubusercontent.com/kism/dotfiles-simple/main/setup.sh | bash && . ~/.bashrc
+    curl --silent https://raw.githubusercontent.com/kism/dotfiles-simple/main/setup.sh | bash && . ~/.bashrc && bind -f ~/.inputrc
 
 ## Generate Terminal Pastable Version
 
